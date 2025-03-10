@@ -123,11 +123,11 @@ addEventListener('keydown', function(e) {
                 if (Game.IsStarted) Game.End();
                 else {
                         let SelectedTime;
-                        while (isNaN(+SelectedTime) || +SelectedTime <= 0 || +SelectedTime > 3599) {
-                                SelectedTime = prompt('Enter a game time in seconds (maximum time: 3599):');
+                        while (isNaN(+SelectedTime) || +SelectedTime <= 9 || +SelectedTime > 3599) {
+                                SelectedTime = prompt('Enter a game time in seconds (minimum time: 10, maximum: 3599):');
                                 if (SelectedTime === '' || SelectedTime === null) return;
                         }
-                        Game.Start(SelectedTime);
+                        Game.Start(+SelectedTime);
                         Game.Time.OnStart = Game.Time.GetString();
                 }
                 return;
