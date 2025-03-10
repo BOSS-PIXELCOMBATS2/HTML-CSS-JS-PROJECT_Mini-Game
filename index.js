@@ -43,7 +43,7 @@ const Game = {
                 GetString() {
                         return `${this.Minutes > 9 ? this.Minutes : '0' + this.Minutes}:${this.Seconds > 9 ? this.Seconds : '0' + this.Seconds}`;
                 },
-        OnStart: 0
+                OnStart: 0
         },
         Properties: {
                 Scores: 0,
