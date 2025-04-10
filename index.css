@@ -1,0 +1,14 @@
+* {
+        box-sizing: border-box;
+        font: normal 900 20px Arial;
+}
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+}
+#screen {
+        border: 2px solid black;
+}
