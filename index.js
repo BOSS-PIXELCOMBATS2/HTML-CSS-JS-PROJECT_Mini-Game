@@ -148,4 +148,4 @@ addEventListener('keyup', e => {
         if (e.code === 'ArrowRight') keyboard.arrowRight = false;
 });
 
-setInterval(initGame, 1 / 60);
+setInterval(initGame, 1000 / 60);
